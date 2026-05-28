@@ -10,17 +10,22 @@ import com.example.ems.service.EmployeeService;
 
 import lombok.AllArgsConstructor;
 
+// Implementation of EmployeeService containing business logic for employee operations
 @Service
 @AllArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
 
+    // Repository to handle database operations
     private final EmployeeRepository employeeRepository;
 
+    // Converts DTO to entity, saves to DB, and returns the saved entity as DTO
     @Override
     public EmployeeDto createEmployee(EmployeeDto employeeDto) {
-
+        // Convert incoming DTO to entity
         var employee = EmployeeMapper.mapToEmployee(employeeDto);
+        // Persist to database
         var savedEmployee = employeeRepository.save(employee);
+        // Convert saved entity back to DTO for response
         return EmployeeMapper.mapToEmployeeDto(savedEmployee);
     }
 }
