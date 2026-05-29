@@ -7,4 +7,6 @@ public interface EmployeeService {
     // Creates a new employee and returns the saved employee data
     EmployeeDto createEmployee(EmployeeDto employeeDto);
 
+    EmployeeDto getEmployeeById(Long employeeId);
+
 }
