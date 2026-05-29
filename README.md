@@ -170,13 +170,13 @@ https://github.com/egarajere-png/EmployerManagementSystem
 
 ### 🔹 Post Image
 
-![Application Running](postexample.png)
+![Post Example](postexample.png)
 
 ---
 
 ### 🔹 Get Image
 
-![PostgreSQL Database](listofusers.png)
+![Reflect the same as PostgreSQL Database](listofusers.png)
 
 ---
 
@@ -188,4 +188,4 @@ https://github.com/egarajere-png/EmployerManagementSystem
 
 ### 🔹 Delete Image
 
-![Project Structure](postexample.png)
+![Delete Prompt](Pasted_image.png)
