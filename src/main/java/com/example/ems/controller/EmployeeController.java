@@ -4,6 +4,7 @@ import com.example.ems.dto.EmployeeDto;
 import com.example.ems.service.EmployeeService;
 
 import lombok.AllArgsConstructor;
+import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,5 +34,12 @@ public class EmployeeController {
     public ResponseEntity<EmployeeDto> getEmployeeById(@PathVariable ("id")Long employeeId) {
         EmployeeDto employee = employeeService.getEmployeeById(employeeId);
         return new ResponseEntity<>(employee, HttpStatus.OK);
+    }
+
+    //Build Get All Employees REST API
+    @GetMapping
+    public ResponseEntity<java.util.List<EmployeeDto>> getAllEmployees() {
+        List<EmployeeDto> employees = employeeService.getAllEmployees();
+        return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 }
