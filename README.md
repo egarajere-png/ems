@@ -165,3 +165,27 @@ GitHub Repository:
 https://github.com/egarajere-png/EmployerManagementSystem
 
 ---
+
+## 📸 Project Screenshots
+
+### 🔹 Post Image
+
+![Application Running](postexample.png)
+
+---
+
+### 🔹 Get Image
+
+![PostgreSQL Database](listofusers.png)
+
+---
+
+### 🔹 Update Image
+
+![Postman Testing](updateexample.png)
+
+---
+
+### 🔹 Delete Image
+
+![Project Structure](postexample.png)
